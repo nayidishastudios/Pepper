@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  repository_id: 1
+  commit_hash: MyString
+  message: MyText
+  is_update: false
+  time: 2013-06-12 11:36:56
+
+two:
+  repository_id: 1
+  commit_hash: MyString
+  message: MyText
+  is_update: false
+  time: 2013-06-12 11:36:56

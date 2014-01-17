@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  level: 1
+  type: 1
+  type_id: 1
+  repository_id: 1
+  commit_id: 1
+
+two:
+  level: 1
+  type: 1
+  type_id: 1
+  repository_id: 1
+  commit_id: 1

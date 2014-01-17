@@ -1,0 +1,2 @@
+activationserviceclient.MachineIdentifier
+activationserviceclient.ActivationServiceClient

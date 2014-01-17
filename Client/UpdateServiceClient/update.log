@@ -1,0 +1,219 @@
+
+
+Started update process at 2013-07-12 13:15:04
+
+java.io.IOException: Cannot run program "cscript": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1042)
+	at java.lang.Runtime.exec(Runtime.java:615)
+	at java.lang.Runtime.exec(Runtime.java:448)
+	at java.lang.Runtime.exec(Runtime.java:345)
+	at updateserviceclient.MachineIdentifier.getSerialNumber(UpdateServiceClient.java:986)
+	at updateserviceclient.UpdateServiceClient.getMachineId(UpdateServiceClient.java:176)
+	at updateserviceclient.UpdateServiceClient.main(UpdateServiceClient.java:121)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1023)
+	... 6 more
+
+java.io.IOException: Cannot run program "cscript": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1042)
+	at java.lang.Runtime.exec(Runtime.java:615)
+	at java.lang.Runtime.exec(Runtime.java:448)
+	at java.lang.Runtime.exec(Runtime.java:345)
+	at updateserviceclient.MachineIdentifier.getMotherboardSN(UpdateServiceClient.java:954)
+	at updateserviceclient.UpdateServiceClient.getMachineId(UpdateServiceClient.java:176)
+	at updateserviceclient.UpdateServiceClient.main(UpdateServiceClient.java:121)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1023)
+	... 6 more
+
+
+
+Starting update of game: number-line-counting.git
+
+Disconnected from server.
+Disconnected from server.
+Disconnected from server.
+Disconnected from server.
+Disconnected from server.
+Disconnected from server.
+Disconnected from server.
+Disconnected from server.
+Disconnected from server.
+Disconnected from server.
+Disconnected from server.
+Disconnected from server.
+
+
+Started update process at 2013-07-12 13:19:35
+
+java.io.IOException: Cannot run program "cscript": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1042)
+	at java.lang.Runtime.exec(Runtime.java:615)
+	at java.lang.Runtime.exec(Runtime.java:448)
+	at java.lang.Runtime.exec(Runtime.java:345)
+	at updateserviceclient.MachineIdentifier.getSerialNumber(UpdateServiceClient.java:986)
+	at updateserviceclient.UpdateServiceClient.getMachineId(UpdateServiceClient.java:176)
+	at updateserviceclient.UpdateServiceClient.main(UpdateServiceClient.java:121)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1023)
+	... 6 more
+
+java.io.IOException: Cannot run program "cscript": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1042)
+	at java.lang.Runtime.exec(Runtime.java:615)
+	at java.lang.Runtime.exec(Runtime.java:448)
+	at java.lang.Runtime.exec(Runtime.java:345)
+	at updateserviceclient.MachineIdentifier.getMotherboardSN(UpdateServiceClient.java:954)
+	at updateserviceclient.UpdateServiceClient.getMachineId(UpdateServiceClient.java:176)
+	at updateserviceclient.UpdateServiceClient.main(UpdateServiceClient.java:121)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1023)
+	... 6 more
+
+
+
+Starting update of game: number-line-counting.git
+
+Disconnected from server.
+Disconnected from server.
+
+
+Started update process at 2013-07-12 13:23:24
+
+java.io.IOException: Cannot run program "cscript": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1042)
+	at java.lang.Runtime.exec(Runtime.java:615)
+	at java.lang.Runtime.exec(Runtime.java:448)
+	at java.lang.Runtime.exec(Runtime.java:345)
+	at updateserviceclient.MachineIdentifier.getSerialNumber(UpdateServiceClient.java:986)
+	at updateserviceclient.UpdateServiceClient.getMachineId(UpdateServiceClient.java:176)
+	at updateserviceclient.UpdateServiceClient.main(UpdateServiceClient.java:121)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1023)
+	... 6 more
+
+java.io.IOException: Cannot run program "cscript": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1042)
+	at java.lang.Runtime.exec(Runtime.java:615)
+	at java.lang.Runtime.exec(Runtime.java:448)
+	at java.lang.Runtime.exec(Runtime.java:345)
+	at updateserviceclient.MachineIdentifier.getMotherboardSN(UpdateServiceClient.java:954)
+	at updateserviceclient.UpdateServiceClient.getMachineId(UpdateServiceClient.java:176)
+	at updateserviceclient.UpdateServiceClient.main(UpdateServiceClient.java:121)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1023)
+	... 6 more
+
+
+
+Starting update of game: number-line-counting.git
+
+System asking for authorization.
+Authenticated.
+No update exists
+Finished updating game number-line-counting.git.
+
+
+
+Started update process at 2013-07-12 13:33:05
+
+java.io.IOException: Cannot run program "cscript": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1042)
+	at java.lang.Runtime.exec(Runtime.java:615)
+	at java.lang.Runtime.exec(Runtime.java:448)
+	at java.lang.Runtime.exec(Runtime.java:345)
+	at updateserviceclient.MachineIdentifier.getSerialNumber(UpdateServiceClient.java:1018)
+	at updateserviceclient.UpdateServiceClient.getMachineId(UpdateServiceClient.java:171)
+	at updateserviceclient.UpdateServiceClient.main(UpdateServiceClient.java:116)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1023)
+	... 6 more
+
+java.io.IOException: Cannot run program "cscript": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1042)
+	at java.lang.Runtime.exec(Runtime.java:615)
+	at java.lang.Runtime.exec(Runtime.java:448)
+	at java.lang.Runtime.exec(Runtime.java:345)
+	at updateserviceclient.MachineIdentifier.getMotherboardSN(UpdateServiceClient.java:986)
+	at updateserviceclient.UpdateServiceClient.getMachineId(UpdateServiceClient.java:171)
+	at updateserviceclient.UpdateServiceClient.main(UpdateServiceClient.java:116)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1023)
+	... 6 more
+
+
+
+Starting update of game: number-line-counting.git
+
+System asking for authorization.
+Authenticated.
+No update exists
+Finished updating game number-line-counting.git.
+
+
+
+Started update process at 2013-07-12 13:33:36
+
+java.io.IOException: Cannot run program "cscript": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1042)
+	at java.lang.Runtime.exec(Runtime.java:615)
+	at java.lang.Runtime.exec(Runtime.java:448)
+	at java.lang.Runtime.exec(Runtime.java:345)
+	at updateserviceclient.MachineIdentifier.getSerialNumber(UpdateServiceClient.java:1018)
+	at updateserviceclient.UpdateServiceClient.getMachineId(UpdateServiceClient.java:171)
+	at updateserviceclient.UpdateServiceClient.main(UpdateServiceClient.java:116)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1023)
+	... 6 more
+
+java.io.IOException: Cannot run program "cscript": error=2, No such file or directory
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1042)
+	at java.lang.Runtime.exec(Runtime.java:615)
+	at java.lang.Runtime.exec(Runtime.java:448)
+	at java.lang.Runtime.exec(Runtime.java:345)
+	at updateserviceclient.MachineIdentifier.getMotherboardSN(UpdateServiceClient.java:986)
+	at updateserviceclient.UpdateServiceClient.getMachineId(UpdateServiceClient.java:171)
+	at updateserviceclient.UpdateServiceClient.main(UpdateServiceClient.java:116)
+Caused by: java.io.IOException: error=2, No such file or directory
+	at java.lang.UNIXProcess.forkAndExec(Native Method)
+	at java.lang.UNIXProcess.<init>(UNIXProcess.java:135)
+	at java.lang.ProcessImpl.start(ProcessImpl.java:130)
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1023)
+	... 6 more
+
+
+
+Starting update of game: number-line-counting.git
+
+System asking for authorization.
+Authenticated.
+No update exists
+Finished updating game number-line-counting.git.
+

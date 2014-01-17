@@ -1,0 +1,26 @@
+<%= form_for @fil, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :commit_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :comit_id, :class => 'number_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :filename, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :filename, :class => 'text_area' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :size, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.number_field :size, :class => 'number_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                fil_path, :class => 'btn' %>
+  </div>
+<% end %>

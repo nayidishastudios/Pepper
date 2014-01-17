@@ -1,0 +1,24 @@
+<% javascript 'updates_form_updater' %>
+<br>
+<%= bootstrap_form_for @update, :html => { :class => 'form-horizontal update-form' } do |f| %>
+  <%= image_tag "loader.gif", :id => "loading-img", :style => "height:50px;position:absolute;display:none;", :alt => "Loading.." %>
+  <%= f.select :level, options_for_select( [ [ "Critical", "0" ], [ "Periodic", "1" ], [ "Security Update", "2" ] ] ) %>
+  <%= f.select :typ, options_for_select( [ [ "Group", "0" ], [ "School", "1" ], [ "Machine", "2" ] ] ), :label => "For" %>
+  <% if @form_for_update %>
+    <%= f.select(:typ_id, [], { :prompt => "Group/School/Machine(s) selected" })%>
+  <% else %>
+    <%= f.select(:typ_id, [], { :prompt => "Group/School/Machine(s) selected" }, { :multiple => true})%>
+  <% end %>
+  <% repositories = Repository.all %>
+  <% rtr = [] %>
+  <% repositories.each do |repository| %>
+    <% rtr << [  "#{repository.name}", repository.id ] %>
+  <% end %>
+  <%= f.select :repository_id, options_for_select(rtr) %>
+  <%= f.select :comit_id, options_for_select([]), :label => "Commit hash" %>
+  <%= f.actions do %>
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                updates_path, :class => 'btn' %>
+  <% end %>
+<% end %>

@@ -1,0 +1,50 @@
+<%- model_class = Update -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:level) %>:</strong></dt>
+  <% levels = [ "Critical", "Periodic", "Security Update" ] %>
+  <dd><%= levels[@update.level] %></dd>
+  <dt><strong><!--<%= model_class.human_attribute_name(:typ) %>-->For:</strong></dt>
+  <% arr = [ "Group", "School", "Machine" ] %>
+  <dd><%= arr[@update.typ] %></dd>
+  <dt><strong><!--<%= model_class.human_attribute_name(:typ_id) %>-->Type name:</strong></dt>
+  <dd><%= Kernel.const_get(arr[@update.typ]).find(@update.typ_id).name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:repository_id) %>:</strong></dt>
+  <dd><%= Repository.find(@update.repository_id).name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:comit_id) %>:</strong></dt>
+  <dd><%= Comit.find(@update.comit_id).comit_hash %></dd>
+  <dt><strong>Progress:</strong></dt>
+  <%
+    machines = 0
+    if @update.typ == 0
+      schools = School.where(:group_id => @update.typ_id)
+      schools.map {|school|
+        ms = Machine.where(:school_id => school.id)
+        machines = machines + ms.length
+      }
+    elsif @update.typ == 1
+      machines = machines + Machine.where(:school_id => @update.typ_id).length
+    else
+      machines = 1
+    end
+
+    progress = (UpdateRecord.where(:update_id => @update.id).length / (machines.nonzero? || 1)) * 100
+
+  %>
+  <dd><%= progress %>%</dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              updates_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_update_path(@update), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              update_path(@update),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

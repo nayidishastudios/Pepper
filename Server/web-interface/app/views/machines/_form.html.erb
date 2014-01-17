@@ -1,0 +1,17 @@
+<br>
+<%= bootstrap_form_for @machine, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.text_field :machine_id, :label => "Unique machine ID" %>
+  <%= f.text_field :name, :label => "Machine name" %>
+  <% rtr = [] %>
+  <% schools = School.all %>
+  <% schools.each do |school| %>
+    <% rtr << [  "#{school.name}", school.id ] %>
+  <% end %>
+  <%= f.select :school_id, options_for_select(rtr) %>
+  <%= f.text_area :ssl_key, :label => "SSL key", :cols => "30", :rows => "5" %>
+  <%= f.actions do %>
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                machines_path, :class => 'btn' %>
+  <% end %>
+<% end %>

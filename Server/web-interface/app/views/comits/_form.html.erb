@@ -1,0 +1,18 @@
+<br>
+<%= bootstrap_form_for @comit, :html => { :class => 'form-horizontal' } do |f| %>
+  <% repositories = Repository.all %>
+  <% rtr = [] %>
+  <% repositories.each do |repository| %>
+    <% rtr << [  "#{repository.name}", repository.id ] %>
+  <% end %>
+  <%= f.select :repository_id, options_for_select(rtr) %>
+  <%= f.text_field :comit_hash %>
+  <%= f.text_area :message, :cols => "30", :rows => "5" %>
+  <%= f.check_box :is_update, :label => "Is commit an update" %>
+  <%= f.datetime_select :time %>
+  <%= f.actions do %>
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                comits_path, :class => 'btn' %>
+  <% end %>
+<% end %>

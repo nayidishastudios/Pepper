@@ -1,0 +1,415 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"up",
+				"update"
+			],
+			[
+				"rep",
+				"repository"
+			],
+			[
+				"group",
+				"group_id"
+			],
+			[
+				"repository",
+				"repository_id"
+			],
+			[
+				"utf",
+				"utf8_encode"
+			],
+			[
+				"St",
+				"StringBuilder"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"Wor",
+				"WordSense"
+			],
+			[
+				"array_ke",
+				"array_key_exists"
+			],
+			[
+				"preg_match",
+				"preg_match_all"
+			],
+			[
+				"return",
+				"returnAjaxJson"
+			],
+			[
+				"str_r",
+				"str_replace"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"in",
+				"input	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/comits_controller.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/repositories_controller.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/comit.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/assets/javascripts/updates_form_updater.js",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/updates_controller.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/updates/_form.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/repositories/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/update.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/layouts/application.html.erb",
+		"/works/deepanshu/Desktop/Nayi Disha Studios/importRepo.py",
+		"/works/deepanshu/Desktop/Nayi Disha Studios/Server/Username-Passwords",
+		"/works/deepanshu/Desktop/Nayi Disha Studios/Server/Environment file",
+		"/works/deepanshu/Desktop/Nayi Disha Studios/Environment file (Server)",
+		"/works/deepanshu/NayiDisha/gitolite-admin/conf/gitolite.conf",
+		"/works/deepanshu/Dropbox/Nayi-Disha/repo-scripts/updateDbOnPush.py",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/update_record.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/machine.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/school.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/group.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/purchase.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/schools_controller.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/fils/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/groups_controller.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/repository.rb",
+		"/works/deepanshu/repo-scripts/updateDbOnPush.py",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/fils_controller.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/fil.rb",
+		"/works/deepanshu/NayiDisha/gitolite-admin/local-code/hooks/common/post-update",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/installer.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/models/user.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/users/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/updates/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/update_records/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/schools/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/purchases/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/machines/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/installers/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/groups/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/comits/index.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/users_controller.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/update_records_controller.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/purchases_controller.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/machines_controller.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/installers_controller.rb",
+		"/works/deepanshu/NayiDisha/gitolite-admin/.git/config",
+		"/works/deepanshu/gitolite-admin/conf/gitolite.conf",
+		"/works/deepanshu/Downloads/EDM.m3u",
+		"/run/user/deepanshu/gvfs/afc:host=d6b1257e178bd5ae767fdf00704d822357e626e4,port=3/com.colorfulphone.WiFiDisk/Documents/[CFMD]db/lastServerMsg.txt",
+		"/works/deepanshu/Desktop/Another World.m3u",
+		"/works/deepanshu/Desktop/EDM.m3u",
+		"/works/deepanshu/NetBeansProjects/IntelliP2P/src/intellip2p/MyKeyManager.java",
+		"/run/user/deepanshu/gvfs/afc:host=d6b1257e178bd5ae767fdf00704d822357e626e4,port=3/com.colorfulphone.WiFiDisk/Documents/[CFMD]db/musicPlayer.cfg",
+		"/works/deepanshu/Desktop/Socket/Passwords",
+		"/works/deepanshu/Downloads/jmdns-3.4.1/src/samples/RegisterService.java",
+		"/works/deepanshu/Downloads/jmdns-3.4.1/src/samples/DiscoverServiceTypes.java",
+		"/works/deepanshu/Downloads/jmdns-3.4.1/src/samples/DiscoverServices.java",
+		"/works/deepanshu/NetBeansProjects/IntelliP2P/src/intellip2p/ParseRoute.java",
+		"/works/deepanshu/Desktop/parseroute/ParseRoute.java",
+		"/works/deepanshu/NetBeansProjects/ActivationServiceServer/src/activationserviceserver/BCrypt.java",
+		"/works/deepanshu/NetBeansProjects/ActivationServiceServer/src/activationserviceserver/ActivationServiceServer.java",
+		"/works/deepanshu/Desktop/parseroute/Tokenizer.java",
+		"/works/deepanshu/Desktop/parseroute/StringArray.java",
+		"/works/deepanshu/Desktop/Passwords",
+		"/works/deepanshu/Desktop/database/test.py",
+		"/works/deepanshu/.ssh/id_rsa",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/updates/show.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/machines/show.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/config/routes.rb",
+		"/works/deepanshu/Desktop/Socket/nds.sh",
+		"/works/deepanshu/Desktop/nds.sh",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/schema.rb",
+		"/works/deepanshu/Desktop/test/keys/wgergerg.crt",
+		"/works/deepanshu/Desktop/2010A1PS455G/src/MyApplet.java",
+		"/works/deepanshu/NetBeansProjects/UpdateServiceServer/mySrvKeystore",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/users/show.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/assets/stylesheets/application.css",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/installers/show.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/schools/_form.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/installers/_form.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/installers/edit.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/schools/new.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/users/_form.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/users/edit.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/migrate/20130624062347_create_installers.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/migrate/20130612061957_create_users.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/migrate/20130612060309_create_repositories.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/migrate/20130612060656_create_comits.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/migrate/20130612061114_create_updates.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/migrate/20130612061429_create_fils.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/migrate/20130612062112_create_groups.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/migrate/20130612062656_create_machines.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/migrate/20130613083126_create_update_records.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/db/migrate/20130614110637_create_purchases.rb",
+		"/works/deepanshu/Downloads/jBCrypt-0.3/BCrypt.java",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/sessions_controller.rb",
+		"/works/deepanshu/privateKey.key",
+		"/works/deepanshu/certificate.crt",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/helpers/users_helper.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/helpers/sessions_helper.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/helpers/application_helper.rb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/controllers/application_controller.rb",
+		"/works/deepanshu/Desktop/song.py",
+		"/works/deepanshu/Desktop/createRepoFiles.py",
+		"/works/deepanshu/Desktop/importRepo.py",
+		"/works/deepanshu/NayiDisha/number-line-counting/Project Infinity_Data/sharedassets0.assets",
+		"/works/deepanshu/NayiDisha/number-line-counting/.gitkeep",
+		"/works/deepanshu/NayiDisha1/repo-scripts/testfile",
+		"/works/deepanshu/NayiDisha1/repo-scripts/updateDbOnPush.py",
+		"/works/deepanshu/NayiDisha/repo-scripts/updateDbOnPush.py",
+		"/works/deepanshu/git-fs/README.md",
+		"/works/deepanshu/git-fs/README",
+		"/works/deepanshu/NayiDisha/local-code/hooks/common/post-update",
+		"/works/deepanshu/NetBeansProjects/games/Game1/updateDbOnPush.py",
+		"/works/deepanshu/NetBeansProjects/games/Game1/updateDbOnPush.py.temp",
+		"/works/deepanshu/.ssh/deepanshu01.pem",
+		"/works/deepanshu/.ssh/credentials.csv",
+		"/tmp/deepanshu01-1.pem",
+		"/tmp/deepanshu01.pem",
+		"/works/deepanshu/NetBeansProjects/games/Game1/config.db",
+		"/works/deepanshu/Desktop/mySrvKeystore",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/purchases/show.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/purchases/_form.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/views/machines/_form.html.erb",
+		"/works/deepanshu/Desktop/Socket/nayi-disha-studios/app/assets/javascripts/purchases_form_updater.js",
+		"/works/deepanshu/Desktop/Socket/git commands",
+		"/works/deepanshu/Desktop/Dev/arc-booking/app/controllers/bookings_controller.rb",
+		"/works/deepanshu/Desktop/Dev/arc-booking/app/views/rooms/index.html.erb",
+		"/works/deepanshu/Desktop/Dev/arc-booking/app/views/bookings/index.html.erb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"/",
+			"../../Music/",
+			"/",
+			"../../Music/",
+			"/",
+			"../../Music/",
+			"F:\\Music",
+			"/",
+			"../../",
+			"  ",
+			"\\",
+			"#",
+			"\\'",
+			"'",
+			"\"",
+			"\\",
+			"#",
+			"\\",
+			"!",
+			"~",
+			"'",
+			"git fs",
+			"modified_at",
+			"datetime.now()",
+			"commit",
+			"type",
+			"commit",
+			"5",
+			"LOCAL_CODE",
+			"local_code",
+			"million",
+			"name",
+			"()\n",
+			"iterator",
+			"Iterator",
+			"iterator",
+			"]));",
+			"\"\", ",
+			" ",
+			"insertedWords",
+			"'\nstrtolower",
+			"\nstrtolower",
+			"name",
+			"name\n\n\nname",
+			"name",
+			"LIKE",
+			"mysqli_query",
+			"united kingdom",
+			"e",
+			"e\n\n\n\n\ne",
+			"../../",
+			"./../",
+			"echo",
+			"print",
+			"(),\n",
+			"get_fields",
+			"get_fields\n\n\n\nget_fields\nget_fields",
+			"\nisAjax",
+			"\n		<Directory Virtual=\"The High Music\">/works/Music/The High Music/</Directory>",
+			">\n",
+			"share",
+			"');\n",
+			"->$",
+			"register",
+			"payment",
+			"active admin",
+			"activeadmin",
+			"active",
+			"<% if current_user.superadmin %>",
+			":admin_user",
+			"form_for",
+			"0",
+			"	",
+			"wrapper",
+			"}\n",
+			"gem 'carrierwave'\n",
+			"'\n",
+			"def"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"updated_at",
+			"datetime.datetime.utcnow",
+			"comit",
+			"typ",
+			"comit",
+			"",
+			"\", \"",
+			"\"",
+			"mquery",
+			"/works/",
+			"<% if signed_in? && current_user.superadmin %>",
+			":user",
+			"bootstrap_form_for",
+			"  ",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 152.0,
+	"status_bar_visible": true
+}

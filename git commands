@@ -1,0 +1,8 @@
+All files in a commit:
+  git diff-tree --no-commit-id --name-only -r <commit id>
+
+Files deleted in a commit:
+  git diff-tree --diff-filter=D --no-commit-id --name-only -r <commit id>
+
+Files modified in a commit:
+  git diff-tree --diff-filter=M --no-commit-id --name-only -r <commit id>

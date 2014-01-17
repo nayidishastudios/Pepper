@@ -1,0 +1,9 @@
+<br>
+<%= bootstrap_form_for @repository, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.text_field :name %>
+  <%= f.actions do %>
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                repositories_path, :class => 'btn' %>
+  <% end %>
+<% end %>

@@ -1,0 +1,18 @@
+<br>
+<%= bootstrap_form_for @fil, :html => { :class => 'form-horizontal' } do |f| %>
+  <% comits = Comit.all %>
+  <% rtr = [] %>
+  <% comits.each do |comit| %>
+    <% rtr << [  "#{comit.comit_hash}", comit.id ] %>
+  <% end %>
+  <%= f.select :comit_id, options_for_select(rtr) %>
+  <%= f.text_area :filename, :label => "File name", :cols => "30", :rows => "5" %>
+  <%= f.number_field :size, :label => "File size(bytes)" %>
+  <% actions = [ [ "Created", "0" ], [ "Modified", "1" ], [ "Deleted", "2" ] ] %>
+  <%= f.select :action, options_for_select(actions) %>
+  <%= f.actions do %>
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                fils_path, :class => 'btn' %>
+  <% end %>
+<% end %>

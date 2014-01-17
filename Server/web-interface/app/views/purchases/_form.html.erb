@@ -1,0 +1,18 @@
+<% javascript 'purchases_form_updater' %>
+<br>
+<%= bootstrap_form_for @purchase, :html => { :class => 'form-horizontal update-form' } do |f| %>
+  <%= image_tag "loader.gif", :id => "loading-img", :style => "height:50px;position:absolute;display:none;", :alt => "Loading.." %>
+  <%= f.select :typ, options_for_select( [ [ "Group", "0" ], [ "School", "1" ], [ "Machine", "2" ] ] ), :label => "For" %>
+  <%= f.select :typ_id, options_for_select([]), :label => "Group/School/Machine" %>
+  <% repositories = Repository.all %>
+  <% rtr = [] %>
+  <% repositories.each do |repository| %>
+    <% rtr << [  "#{repository.name}", repository.id ] %>
+  <% end %>
+  <%= f.select :repository_id, options_for_select(rtr) %>
+  <%= f.actions do %>
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                purchases_path, :class => 'btn' %>
+  <% end %>
+<% end %>

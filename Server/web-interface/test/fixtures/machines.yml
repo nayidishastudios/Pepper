@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  machine_id: MyString
+  name: MyString
+  school_id: 1
+  ssl_key: MyText
+
+two:
+  machine_id: MyString
+  name: MyString
+  school_id: 1
+  ssl_key: MyText

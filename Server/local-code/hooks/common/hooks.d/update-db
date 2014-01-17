@@ -1,0 +1,33 @@
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+#exec git update-server-info
+#python /works/deepanshu/repositories/foo.git/hooks/updateDbOnPush.py 'committed'
+
+if [ $(git rev-parse --is-bare-repository) = true ]
+then
+    REPOSITORY_BASENAME=$(basename "$PWD") 
+else
+    REPOSITORY_BASENAME=$(basename $(readlink -nf "$PWD"/..))
+fi
+
+branch=$(git rev-parse --symbolic --abbrev-ref $1)
+
+SCRIPT_PATH="/works/deepanshu/repo-scripts/updateDbOnPush.py" 
+PYTHON="/usr/bin/python"
+ARG="committed"
+
+REVISION=$(git rev-parse HEAD)
+
+# call script via the interrupter     
+
+$PYTHON $SCRIPT_PATH $ARG $REPOSITORY_BASENAME $branch $REVISION
+
+#echo Update pushed to branch $branch > /works/deepanshu/repositories/foo.git/hooks/testfile
+
+echo Update pushed to branch $branch
+exec git update-server-info

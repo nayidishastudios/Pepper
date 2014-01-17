@@ -1,0 +1,38 @@
+<%- model_class = Repository -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<%= will_paginate @repositories, renderer: BootstrapPagination::Rails %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @repositories.each do |repository| %>
+      <tr>
+        <td><%= link_to repository.name, repository_path(repository) %></td>
+        <td>
+          <%= link_to t('.new', :default => "View Commits"),
+              repository_comits_path(repository), :class => 'btn btn-mini' %>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_repository_path(repository), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      repository_path(repository),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate @repositories, renderer: BootstrapPagination::Rails %>
+
+<br />
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_repository_path,
+            :class => 'btn btn-primary' %>

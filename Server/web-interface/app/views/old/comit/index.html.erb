@@ -1,0 +1,44 @@
+<%- model_class = Commit -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:repository_id) %></th>
+      <th><%= model_class.human_attribute_name(:commit_hash) %></th>
+      <th><%= model_class.human_attribute_name(:message) %></th>
+      <th><%= model_class.human_attribute_name(:is_update) %></th>
+      <th><%= model_class.human_attribute_name(:time) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @commits.each do |commit| %>
+      <tr>
+        <td><%= link_to commit.id, commit_path(commit) %></td>
+        <td><%= commit.repository_id %></td>
+        <td><%= commit.commit_hash %></td>
+        <td><%= commit.message %></td>
+        <td><%= commit.is_update %></td>
+        <td><%= commit.time %></td>
+        <td><%=l commit.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_commit_path(commit), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      commit_path(commit),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_commit_path,
+            :class => 'btn btn-primary' %>

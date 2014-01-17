@@ -1,0 +1,29 @@
+<%- model_class = Comit -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:repository_id) %>:</strong></dt>
+  <dd><%= Repository.find(@comit.repository_id).name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:comit_hash) %>:</strong></dt>
+  <dd><%= @comit.comit_hash %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:message) %>:</strong></dt>
+  <dd><%= @comit.message %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:is_update) %>:</strong></dt>
+  <dd><%= @comit.is_update %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:time) %>:</strong></dt>
+  <dd><%= @comit.time %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              comits_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_comit_path(@comit), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              comit_path(@comit),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

@@ -1,0 +1,11 @@
+<br>
+<%= bootstrap_form_for @group, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_area :contact, :cols => "30", :rows => "5" %>
+  <%= f.text_area :comments, :cols => "30", :rows => "5" %>
+  <%= f.actions do %>
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                groups_path, :class => 'btn' %>
+  <% end %>
+<% end %>

@@ -1,0 +1,20 @@
+<% javascript 'update_records_form_updater' %>
+<br>
+<%= bootstrap_form_for @update_record, :html => { :class => 'form-horizontal update-form' } do |f| %>
+  <%= image_tag "loader.gif", :id => "loading-img", :style => "height:50px;position:absolute;display:none;", :alt => "Loading.." %>
+  <%
+    updates = Update.all
+    ups = []
+    updates.each do |update|
+      up = Comit.find(update.comit_id).comit_hash + "(" + Repository.find(update.repository_id).name + ")"
+      ups << [ "#{up}", update.id ]
+    end
+  %>
+  <%= f.select :update_id, options_for_select(ups) %>
+  <%= f.select :machine_id, options_for_select([]) %>
+  <%= f.actions do %>
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+              update_records_path, :class => 'btn' %>
+  <% end %>
+<% end %>
